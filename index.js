@@ -167,9 +167,9 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 
 let computer = Math.random();
 if(computer < .334){
-  computer = "rock"
+  computer = "rock";
 } else if(computer >= .334 && computer < .667){
-  computer = "paper"
+  computer = "paper";
 } else {
   computer = "scissors"
 }
@@ -198,7 +198,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  return kilometers * 0.621371
+  return kilometers * 0.621371;
 }
 
 
@@ -212,7 +212,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  return cm / 30.48
+  return cm / 30.48;
 }
 
 
@@ -227,8 +227,8 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number - 1} bottles of soda on the wall`;
 }
 
 
@@ -247,8 +247,18 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if(score <= 100 && score >= 90){
+  return 'you got an A';
+} else if(score <= 89 && score >= 80){
+  return 'you got a B';
+} else if(score <= 79 && score >= 70){
+  return 'you got a C';
+} else if(score <= 69 && score >= 60){
+  return 'you got a D';
+} else {
+  return 'you got an F';
+}
 }
 
 
