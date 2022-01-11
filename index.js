@@ -36,8 +36,14 @@ Do the following:
    HINT: no function required
 */
 
+let value1 = 1
+let value2 = 2
 
+if(value1 !== value2){
+  value1 = value2
+}
 
+console.log(value1)
 
 
 /*
@@ -51,7 +57,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let num = "1999"
+console.log(Number(num))
 
 
 /*
